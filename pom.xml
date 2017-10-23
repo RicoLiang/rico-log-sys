@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.rico.log</groupId>
+	<artifactId>rico-log-sys</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<description>日志系统</description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<showWarnings>true</showWarnings>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>rico-log-sys-log4j1</module>
+		<module>rico-log-sys-log4j2</module>
+		<module>rico-log-sys-elk</module>
+		<module>rico-log-sys-log4jdbc</module>
+	</modules>
+</project>
